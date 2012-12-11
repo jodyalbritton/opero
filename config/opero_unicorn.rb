@@ -1,5 +1,5 @@
 working_directory "/var/src/opero"
-pid "/var/src/getoptimus/tmp/pids/unicorn.pid"
+pid "/var/src/opero/tmp/pids/unicorn.pid"
 stderr_path "/var/src/opero/log/unicorn.log"
 stdout_path "/var/src/opero/log/unicorn.log"
 
