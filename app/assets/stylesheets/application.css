@@ -12,30 +12,43 @@
  *= require_tree .
  */
 
+@media (min-width:500px) {
+	
+	.jumbotron h1 {
+		font-size: 8.75em;
+		padding: 10px;	
+	}
+	
+}
+@media (max-width:500px) {
+	
+	.jumbotron h1 {
+		font-size: 5.75em;
+		padding: 5px;
+	}	
+}
+
+
+
 .jumbotron {
 	background-image: url('/assets/textured_stripes.png');
-	min-height: 500px;
 	text-align:  center;
 }
 
 .jumbotron h1 {
-
-	font-size: 120px;
-	padding: 10px;
-	font-family: 'Swanky and Moo Moo', sans-serif;
+    font-family: 'Swanky and Moo Moo', sans-serif;
 }
 .jumbotron h2 {
 	font-family: 'Swanky and Moo Moo', sans-serif;
 }
 .masthead h1 { 
-font-size: 120px;
 line-height: 1;
 }
 
 .social-bar {
 	padding: 15px 0;
 	text-align: center;
-	background-color: whiteSmoke;
+	background-color: white;
 	border-top: 1px solid white;
 	border-bottom: 1px solid #DDD;
 }
