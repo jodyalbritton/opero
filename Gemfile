@@ -13,16 +13,18 @@ gem 'mysql2'
 group :assets do
   gem 'less-rails'
   gem 'coffee-rails', '~> 3.2.1'
-  gem 'compass-rails'
-  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  gem 'libv8'
-  gem 'therubyracer', :platforms => :ruby
 
+  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
+  gem 'therubyracer', :platforms => :ruby
+  
   gem 'uglifier', '>= 1.0.3'
 end
-gem 'twitter-bootstrap-rails'
+
 gem 'jquery-rails'
-gem 'thin'
+
+group :development do
+	gem 'thin'
+end
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -31,6 +33,7 @@ gem 'thin'
 # gem 'jbuilder'
 
 # Use unicorn as the app server
+gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 gem 'unicorn'
 
 # Deploy with Capistrano
